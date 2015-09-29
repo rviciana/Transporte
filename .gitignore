@@ -20,6 +20,9 @@ $RECYCLE.BIN/
 *.exe
 *.ilk
 *.pdb
+*.lastbuildstate
+*.log
+*.tlog
 
 
 # Windows shortcuts
