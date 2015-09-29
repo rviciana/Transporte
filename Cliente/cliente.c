@@ -20,7 +20,7 @@ Autor: Juan Carlos Cuevas Martínez
 
 #include "protocol.h"
 
-//cambios
+//cambios para ver si funciona la actualización
 
 
 
@@ -58,7 +58,9 @@ int main(int *argc, char *argv[])
 
 		if(sockfd==INVALID_SOCKET)
 		{
+			DWORD error=GetLastError();
 			printf("CLIENTE> ERROR AL CREAR SOCKET\r\n");
+			printf("CLIENTE> ERROR %d AL CREAR SOCKET\r\n", error); //mas cambios realizados para ver que pasa con la deteccion
 			exit(-1);
 		}
 		else
